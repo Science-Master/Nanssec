@@ -1,0 +1,312 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* Hide on smaller devices */
+
+/* Header with it's elements */
+header{
+    background-color: #F5F877;
+    height: 5rem;
+    width: 100%;
+}
+
+header #name{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 1.3rem;
+}
+
+
+header .brand{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .brand img{
+    border-radius: 50%;
+    margin: 10px 20px;
+}
+
+header .brand p{
+    font-size: 1.2rem;
+    margin: 20px 0px;
+    color: #000;
+}
+
+/* Navigation for smaller devices */
+
+
+/* Humberger for smaller display navigation */
+.humberger{
+    border: 1px solid black;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 5px;
+    margin: 10px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+/* Navigation for smaller devices(humberger list) */
+
+.nav-bar{
+    display: none;
+}
+
+.active{
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transition-timing-function: ease-out;
+}
+
+.nav-bar ul{
+    display: block;
+    list-style-type: none;
+}
+
+
+.nav-bar ul li a{
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: medium;
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+}
+
+ul a:hover{
+    
+}
+
+/* About statements for header */
+.header-text{
+    margin: 10px;
+}
+
+.mission, .vision, .core-values, .goals{
+    margin: 10px 5px;
+}
+
+h4{
+    text-align: center;
+    padding: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.content-area{
+    margin-top: 10px;
+    background-color: #F5F877;
+}
+
+.content-area p{
+    padding: 5px 15px;
+}
+
+/* End of content */
+
+.footer{
+    min-height: 20vh;
+    background-color: black;
+    color: white;
+}
+
+.footer .footer-content {
+    display: block;
+    margin-left: 15px;
+}
+
+.footer-content h4 {
+    text-transform: uppercase;
+}
+
+.footer-content .footer-section-links {
+    padding-top: 20px;
+}
+
+.footer-content .footer-section-links p {
+    margin-top: 10px;
+}
+.footer-content .footer-section-links ul {
+    display: flex;
+}
+
+.footer-content .footer-section-links ul li {
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.footer-section-contact-form {
+    margin-top: 30px;
+}
+
+.footer .footer-bottom {
+    background-color: #2F2F2F;
+    text-align: center;
+    font-size: .8rem;
+    margin-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* Media queries */
+@media only screen and (min-width: 768px){
+    *{
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    header{
+        height: 25%;
+    }
+
+    header .brand{
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .brand img{
+        border-radius: 50%;
+        margin: 5px;
+    }
+
+    header .brand p{
+        font-size: 2rem;
+        margin: 10px;
+    }
+
+
+    .nav-bar{
+        display: flex;
+    }
+
+    .nav-bar ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+    }
+
+    .nav-bar ul li{
+        padding: 10px;
+    }
+
+
+    .nav-bar ul li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: .9rem;
+        color: #000;
+    }
+
+    ul a:active{
+        
+    }
+
+    ul a:hover{
+        border-bottom: 1px solid rgb(68, 156, 228);
+        opacity: 0.8;
+    }
+
+    ul a:after{
+        color: blue;
+    }
+
+    .humberger, .home, header #name{
+        display: none;
+    }
+
+    .header-text h4{
+        font-size: 1.2rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 30% auto;
+    }
+
+
+    .footer .footer-content {
+        display: grid;
+        grid-template-columns: 40% auto;
+        justify-content: space-between;
+
+    }
+
+    .footer-content .footer-section-contact-form {
+        margin-right: 30px;
+    }
+
+}
+
+/* Media queries */
+@media (min-width: 1024px){
+    .footer .footer-content {
+        display: grid;
+        grid-template-columns: 40% auto;
+        justify-content: space-between;
+
+    }
+
+    .footer-content .footer-section-contact-form {
+        margin-right: 30px;
+    }
+}
+
+
+@media (max-width: 767px){
+    .nav-bar ul li{
+       width: 100%;
+       margin: 30px;
+    }
+
+    .nav-bar ul li a{
+        width: 100%;
+        margin: 20px;
+    }
+
+
+}
+
+@media (max-width: 298px){
+    header .brand{
+        display: flex;
+        justify-content: center;
+    }
+
+    .brand p {
+        margin-left: 100px;
+    }
+
+    .nav-bar ul li a :hover{
+        background-color: black;
+    }
+}
+
+@media only screen and(max-width: 375px){
+    header .brand p {
+        color: yellow;
+        display: none;
+    }
+}
