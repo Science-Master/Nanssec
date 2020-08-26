@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandom Senior High School</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+    <header>
+        <!--Brand name-->
+        <div class="brand">
+            <img src="/imgs/crest.jpg" alt="school crest" height="45" id="topimg"> 
+            <p>ST MICHAEL'S BOYS</p>
+        </div>
+        <!--End of Brand name-->
+
+        <!--humberger for smaller devices-->
+        <div class="top-nav">
+            <div class="humberger">
+                <span class="open-slide">
+                        <svg width="30" height= "30">
+                            <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                            <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                            <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                        </svg>
+                </span>
+            </div>
+            <!--Menu for larger devices-->
+            <div class="nav-bar" id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Academia</a></li>
+                    <li><a href="#">Alumini</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Get Help?</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+    <!--About statements-->
+        <section class="header-text">
+            <div class="mission">
+                <h4>MISSION STATEMENT</h4>
+                <p>Nandom Senior High School seeks to promote a holistic development of the youth, for Christian civic responsibility and national development through continuous quest for academic excellence, integrity and service.</p>
+            </div>
+            <div class="vision">
+                <h4>VISION STATEMENT</h4>
+                <p>Inspired by Christian values, Nandom Senior High School is dedicateed to providing the youth with quality educaation, self-discipline and sound Christian moral education for achieving holistic human development and for nation building.</p>
+            </div>
+            <div class="core-values">
+                <h4>CORE VALUES</h4>
+                <p>They include: Idealism, generosity, professionalism, integrity, diligence, innovativeness, mutual love and accountability.</p>
+            </div>
+            <div class="goals">
+                <h4>GOALS</h4>
+                <p>To produce self-disciplined human resource base who are useful to themselves and society at large.</p>
+                <p>To promote inter-cultural and inter-religious dialogue and 
+            </div>
+        </section>
+        <!--Main body content area-->
+        <section class="content-area">
+            <p>Nandom Senior High is an all-boys Catholic secondary school located in Nandom, the Upper West Region of Ghana, Nandom district to be precise.
+            The school is aguably one of the finest in the Northern zone of the country. It is well noted for the extremely high standards of discipline of its students and their excellent academic work. The list of achievements is rather too long to fit in.</p>
+            <hr height="2px"><hr height="2px">
+        </section>
+
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-content">
+            
+            <div class="footer-section-links">
+                    <h4>Connect with us</h4>
+                    <p class="links-txt">Reach out to Nandom senior high school via our social media platforms for further engagements. Don't forget to like, share and subscribe. </p>
+                <ul>
+                    <li><a href="https://www.facebook.com/StMichaelBoysSchNandom/"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-linkedin"></i></li>
+                    <li><i class="fab fa-youtube"></i></li>
+                </ul>
+                
+            </div>
+            <div class="footer-section-contact-form">
+                <form action="/info.html" method="GET">
+                    <h4>Contact us</h4> <br>
+                    <label for="email" placeholder = "abc@gmail.com">Email</label>
+                    <input type="email" name="mail" id="mail" style="margin-bottom: 5px;"><br>
+                    <textarea name="" id="txt" cols="30" rows="10" placeholder="Leave a message"></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; St.Michael's boys senior high school || designed by Bright Sumpuo Serinye
+        </div>
+    </footer>
+    <!--Javascript for hamberger -->
+    <script>
+
+        (function(){
+            var menu = document.querySelector('.nav-bar ul'),
+                humberger = document.querySelector('.humberger'),
+                navDiv =  document.getElementById('nav');
+
+            humberger.addEventListener('click', function(e) {
+                menu.classList.toggle('active');
+                nav.classList.toggle('active');
+                e.preventDefault();
+            });
+        }());
+       
+    </script> 
+
+
+</body>
+</html>
